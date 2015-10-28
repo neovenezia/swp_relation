@@ -1,0 +1,9 @@
+<h1>Edit page</h1>
+
+<p>edit post : <%=@comment.id%></p>
+
+<form action='/comment_update'>
+    <input type='hidden' name='id' value='<%=@comment.id%>'>
+    <textarea name='comment'><%=@comment.msg%></textarea><br>
+    <input type="submit">
+</form>
